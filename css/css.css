@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    height: 200vh;
+}
+/* Header */
+
+.firstPage{
+    background-image: url("../img/generalBanner.png");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center 10vh;
+    background-size: cover;
+
+}
+
+/* Main block  */
+main {
+    height: 90vh;
+    /*Background-repeat: no-repeat;*/
+    /*Background-position: center 1px;*/
+    /*Background-size: cover;*/
+}
+
+#general {
+    height: 90vh;
+}
+
+/* Logo */
+
+.fon {
+    background-color: rgba(0, 0, 0, 0.71);
+    box-shadow: -12px 3px 71px 68px rgba(0, 0, 0, 0.72);
+    -webkit-box-shadow: -12px 3px 71px 68px rgba(0, 0, 0, 0.72);
+    -moz-box-shadow: -12px 3px 71px 68px rgba(0, 0, 0, 0.72);
+    height: 35vh;
+    width: 40vh;
+    float: right;
+}
+
+#logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 12vh;
+    margin-top: 4vh;
+}
+
+.img {
+    margin-top: 10px;
+}
+
+.bigger {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+
+    text-transform: uppercase;
+}
+
+.labelForm {
+    background-color: rgba(242, 204, 133, 0.8);
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+form h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    padding-bottom: 35px;
+    margin: 0;
+    width: 200px;
+
+}
+
+.input {
+    border: none;
+    height: 30px;
+    width: 200px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+.buttonBook{
+    margin-top: 15px;
+    width: 160px;
+    height: 60px;
+    background-color: #84bdd1;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    border: none;
+    box-shadow: -2px 2px 10px 0 rgba(0,0,0,0.75);
+}
+
+label {
+    font-size: 3vh;
+    color: #f7f1bf;
+}
+
+header {
+    height: 10vh;
+}
+
+.header {
+    height: 10vh;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+}
+
+.flexColumn a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+.flexColumn a:hover {
+    text-decoration: none;
+    color: #d3d3d3;
+}
+
+.glyphicon {
+    font-size: 30px;
+    color: white;
+}
+
+.fa {
+    text-decoration: none;
+    color: white;
+    margin-right: 50px;
+}
+
+.fa-twitter:hover {
+    text-decoration: none;
+    color: #55ACEE;
+}
+
+.fa-facebook:hover {
+    text-decoration: none;
+    color: #4265b9;
+}
+
+.fa-instagram:hover {
+    text-decoration: none;
+    color: #c13584;
+}
+
+.fa:last-child {
+    margin-right: 0;
+}
+
+article {
+    color: white;
+    font-size: large;
+    /*display: inline-block;*/
+}
+
+.margin {
+    margin-top: 1vh;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+
+nav {
+    display: table;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.topmenu:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.topmenu > li {
+
+}
+
+.topmenu > li > a {
+    pointer-events: none;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+.submenu-link:after {
+    font-family: "FontAwesome", serif;
+    color: inherit;
+    margin-left: 10px;
+}
+
+.submenu {
+    background: #010202;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 20%;
+    text-align: center;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    transition: .3s ease-in-out;
+}
+
+.submenu a {
+    opacity: 1;
+    color: white;
+    font-size: 24px;
+}
+
+.submenu a:hover {
+    text-decoration: none;
+    color: #d3d3d3;
+}
+
+.submenu li {
+    padding-top: 10%;
+}
+
+.submenu li:last-child {
+    padding-bottom: 10%;
+}
+
+.submenu li:last-child a {
+    border-bottom: none;
+}
+
+.topmenu > li:hover .submenu {
+    z-index: 2;
+    opacity: 0.8;
+    transform: scaleY(1);
+}
